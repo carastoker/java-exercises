@@ -42,7 +42,7 @@ public class ConsoleExercises {
         System.out.println("Enter the length of your classroom");
         length = scan.nextFloat();
 
-//      Java printf( ) Method Quick Reference
+//      reference java printf( )
         System.out.println("Here are the room calculations");
         System.out.printf("area= %.2f sqft\n", length * width);
         System.out.printf("perimeter= %.2fft %.2fft\n", (2 * width),(2 * length));
