@@ -44,7 +44,7 @@ public class ConsoleExercises {
 
 //      Java printf( ) Method Quick Reference
         System.out.println("Here are the room calculations");
-        System.out.printf("area= %.2f sqft\n", length*width);
+        System.out.printf("area= %.2f sqft\n", length * width);
         System.out.printf("perimeter= %.2fft %.2fft\n", (2 * width),(2 * length));
         System.out.printf("volume= %.2f cu/ft\n", (length * height * width));
 
