@@ -10,15 +10,29 @@ public class ControlFlowExercises {
 
         Scanner scan = new Scanner(System.in);
 
-        int i = 5;
+//        int num =;
+//        int numReverse;
 
-        while (i <= 15) {
+        int i = 0;
+
+        while (i <= 100) {
 
             System.out.println("value of i is: " + i);
 
-            i++;
+            i += 2;
         }
 
     }
+
+//        int i = 5;
+//
+//        while (i <= 15) {
+//
+//            System.out.println("value of i is: " + i);
+//
+//            i++;
+//        }
+//
+//    }
 }
 
