@@ -16,7 +16,7 @@ public class HelloWorld {
         String myString = "3.14159";
         System.out.println(myString);
 
-       double myNumber = 3.14;
+        double myNumber = 3.14;
         System.out.println(myNumber);
 
 //    ------------------------------------------
@@ -32,20 +32,18 @@ public class HelloWorld {
 //    ------------------------------------------
 
 //        int x = 4;
-//        x = x + 5;
+//        x =+ 5;
 //
 //        int x = 3;
 //        int y = 4;
-//        y = y * x;
+//        y =* x;
 //
 //        int x = 10;
 //        int y = 2;
-//        x = x / y;
-//        y = y - x;
+//        x =/ y;
+//        y =- x;
 
     }
-
-
 
 }
 
