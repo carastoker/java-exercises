@@ -9,31 +9,31 @@ public class ConsoleExercises {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-
+        String name;
 //code skips when nextIn is combined with nextLine
-//        System.out.println("Enter your age");
-//        int age = scan.nextInt();
-//        System.out.println(age);
-//
+        System.out.println("Enter your age");
+        int age = scan.nextInt();
+        System.out.println(age);
+
 //       input.nextLine();
 //       input.nextInt();
 
-        System.out.println("Enter your name");
-        String name = scan.nextLine();
-        System.out.println(name);
+//        System.out.println("Enter your name");
+//        name = scan.next();
+//        System.out.println(name);
+//
+//        System.out.println("Enter your favorite language");
+//        String lang = scan.next();
+//        System.out.println(lang);
+//
+//        System.out.println("Can you whistle");
+//        String whistle = scan.next();
+//        System.out.println(whistle);
 
+        System.out.println("Do you prefer Italian and French food or Indian and Thai food\n");
+        String food = scan.next();
+        System.out.printf("I like ",food);
 
-        System.out.println("Enter your favorite language");
-        String lang = scan.nextLine();
-        System.out.println(lang);
-
-        System.out.println("Can you whistle");
-        String whistle = scan.nextLine();
-        System.out.println(whistle);
-
-        System.out.println("Do you prefer Italian and French food or Indian and Thai food");
-        String food = scan.nextLine();
-        System.out.println(food);
 
         float height;
         float width;
