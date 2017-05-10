@@ -63,12 +63,26 @@ public class ControlFlowExercises {
 
 //     display a table of powers -----------------------------------------
 
-        int number =;
-        int squered =;
-        int cubed =;
+            int number;
+            int squared;
+            int cubed;
+            String yesNo;
 
-        System.out.println("Enter a number");
+        do {
+            System.out.println("Enter a number: ");
+            number = scan.nextInt();
 
+            for (int i = 1; i <= number; ++i) {
+                squared = i * i;
+                cubed = i * i * i;
+                System.out.println(i + " | " + squared + " | " + cubed);
+                System.out.println("\n");
+            }
+
+            System.out.println("Would you like to continue? (Y/N)");
+            yesNo = scan.next();
+
+        } while ("Y".equalsIgnoreCase(yesNo));
 
     }
 }
