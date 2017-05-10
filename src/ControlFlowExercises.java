@@ -10,17 +10,30 @@ public class ControlFlowExercises {
 
         Scanner scan = new Scanner(System.in);
 
-//     do while exercise --------------------
-       int i = 0;
+//     do while exercise one --------------------------------------
 
-        while (i <= 100) {
+//            int i = 100;
+//
+//        do {
+//
+//            System.out.println("value of i is: " + i);
+//
+//            i -= 5;
+//
+//        } while (i >= -10);
 
-            System.out.println("value of i is: " + i);
+//      do while exercise two  --------------------------------------
 
-            i += 2;
-        }
+//        int i = 2;
+//
+//        do {
+//
+//            System.out.println("value of i is: " + i);
+//            i *= 2;
+//
+//        } while (i <= 1000000);
 
-//        do exercise ----------------------
+//        do exercise -------------------------------------------------
 //        int i = 5;
 //
 //        while (i <= 15) {
@@ -30,15 +43,15 @@ public class ControlFlowExercises {
 //            i++;
 //        }
 
-//      buzzFizz exercise -----------------
+//      buzzFizz exercise ----------------------------------------------
 
 //      initialise strings
-        String buzz = "buzz";
-        String fizz = "fizz";
+//        String buzz = "buzz";
+//        String fizz = "fizz";
 
 //        for (int i = 1; i <= 100; ++i) {
 //            if (i % 15 == 0) {
-//                System.out.println("bizz" + "fizz " + i);
+//                System.out.println("buzz" + "fizz " + i);
 //            } else if (i % 3 == 0) {
 //                System.out.println("buzz " + i);
 //            } else if (i % 5 == 0) {
@@ -47,6 +60,16 @@ public class ControlFlowExercises {
 //                System.out.println(i);
 //            }
 //        }
+
+//     display a table of powers -----------------------------------------
+
+        int number =;
+        int squered =;
+        int cubed =;
+
+        System.out.println("Enter a number");
+
+
     }
 }
 
