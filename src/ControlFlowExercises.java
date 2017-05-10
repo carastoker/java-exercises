@@ -19,28 +19,23 @@ public class ControlFlowExercises {
 
 //      do while exercise one -------------------------------------- refactor to a for loop
 
-        for (int i = 100;  i >= -10; i -= 5) {
-
-            System.out.println("value of i is: " + i);
-        }
-
-//      do while exercise two  --------------------------------------
-
-//        int i = 2;
-//
-//        do {
+//        for (int i = 100;  i >= -10; i -= 5) {
 //
 //            System.out.println("value of i is: " + i);
-//            i *= 2;
-//
-//        } while (i <= 1000000);
+//        }
+
+//      do while exercise two  -------------------------------------- refactor to a for loop
+
+//        for (int i = 2; i <= 1000000; i *= 2) {
+//            System.out.println("value of i is: " + i);
+//        }
 
 //      buzzFizz exercise ----------------------------------------------
-
+//
 //      initialise strings
 //        String buzz = "buzz";
 //        String fizz = "fizz";
-
+//
 //        for (int i = 1; i <= 100; ++i) {
 //            if (i % 15 == 0) {
 //                System.out.println("buzz" + "fizz " + i);
@@ -54,7 +49,7 @@ public class ControlFlowExercises {
 //        }
 
 //      display a table of powers -----------------------------------------
-//
+////
 //            int number;
 //            int squared;
 //            int cubed;
@@ -78,9 +73,39 @@ public class ControlFlowExercises {
 
 //        convert grades --------------------------------------------------------------
 
-//        System.out.println("Pick a number between 0 - 100");
-//        number = scan.nextInt();
+        int A;
+        int B;
+        int C;
+        int D;
+        int F;
+        int grade = 0;
+        String yesNo;
 
+
+        do {
+
+        System.out.println("Pick a number between 0 - 100: ");
+        int numGrade = scan.nextInt();
+
+            if ((numGrade >= 88) && (numGrade <= 100)) {
+                System.out.println("A");
+            } else if ((numGrade >= 80) && (numGrade <= 87)) {
+                System.out.println("B");
+            } else if ((numGrade >= 67) && (numGrade <= 79)) {
+                System.out.println("C");
+            } else if ((numGrade >= 60) && (numGrade <= 66)) {
+                System.out.println("D");
+            } else if ((numGrade >= 0) && (numGrade <= 59)) {
+                System.out.println("F");
+            } else
+                System.out.print(grade);
+
+            System.out.println("\n");
+
+            System.out.println("Would you like to continue? (Y/N)");
+            yesNo = scan.next();
+
+        } while ("Y".equalsIgnoreCase(yesNo));
 
     }
 }
