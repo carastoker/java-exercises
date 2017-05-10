@@ -10,10 +10,8 @@ public class ControlFlowExercises {
 
         Scanner scan = new Scanner(System.in);
 
-//        int num =;
-//        int numReverse;
-
-        int i = 0;
+//     do while exercise --------------------
+       int i = 0;
 
         while (i <= 100) {
 
@@ -22,8 +20,7 @@ public class ControlFlowExercises {
             i += 2;
         }
 
-    }
-
+//        do exercise ----------------------
 //        int i = 5;
 //
 //        while (i <= 15) {
@@ -32,7 +29,24 @@ public class ControlFlowExercises {
 //
 //            i++;
 //        }
-//
-//    }
+
+//      buzzFizz exercise -----------------
+
+//      initialise strings
+        String buzz = "buzz";
+        String fizz = "fizz";
+
+//        for (int i = 1; i <= 100; ++i) {
+//            if (i % 15 == 0) {
+//                System.out.println("bizz" + "fizz " + i);
+//            } else if (i % 3 == 0) {
+//                System.out.println("buzz " + i);
+//            } else if (i % 5 == 0) {
+//                System.out.println("fizz " + i);
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
+    }
 }
 
