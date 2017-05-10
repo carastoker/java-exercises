@@ -10,17 +10,19 @@ public class ControlFlowExercises {
 
         Scanner scan = new Scanner(System.in);
 
-//     do while exercise one --------------------------------------
-
-//            int i = 100;
+//      do exercise ------------------------------------------------- refactor to a for loop
 //
-//        do {
+//        for (int i = 5; i <= 15; i++) {
 //
 //            System.out.println("value of i is: " + i);
-//
-//            i -= 5;
-//
-//        } while (i >= -10);
+//        }
+
+//      do while exercise one -------------------------------------- refactor to a for loop
+
+        for (int i = 100;  i >= -10; i -= 5) {
+
+            System.out.println("value of i is: " + i);
+        }
 
 //      do while exercise two  --------------------------------------
 
@@ -32,16 +34,6 @@ public class ControlFlowExercises {
 //            i *= 2;
 //
 //        } while (i <= 1000000);
-
-//        do exercise -------------------------------------------------
-//        int i = 5;
-//
-//        while (i <= 15) {
-//
-//            System.out.println("value of i is: " + i);
-//
-//            i++;
-//        }
 
 //      buzzFizz exercise ----------------------------------------------
 
@@ -61,28 +53,34 @@ public class ControlFlowExercises {
 //            }
 //        }
 
-//     display a table of powers -----------------------------------------
+//      display a table of powers -----------------------------------------
+//
+//            int number;
+//            int squared;
+//            int cubed;
+//            String yesNo;
+//
+//        do {
+//            System.out.println("Enter a number: ");
+//            number = scan.nextInt();
+//
+//            for (int i = 1; i <= number; ++i) {
+//                squared = i * i;
+//                cubed = i * i * i;
+//                System.out.println(i + " | " + squared + " | " + cubed);
+//                System.out.println("\n");
+//            }
+//
+//            System.out.println("Would you like to continue? (Y/N)");
+//            yesNo = scan.next();
+//
+//        } while ("Y".equalsIgnoreCase(yesNo));
 
-            int number;
-            int squared;
-            int cubed;
-            String yesNo;
+//        convert grades --------------------------------------------------------------
 
-        do {
-            System.out.println("Enter a number: ");
-            number = scan.nextInt();
+//        System.out.println("Pick a number between 0 - 100");
+//        number = scan.nextInt();
 
-            for (int i = 1; i <= number; ++i) {
-                squared = i * i;
-                cubed = i * i * i;
-                System.out.println(i + " | " + squared + " | " + cubed);
-                System.out.println("\n");
-            }
-
-            System.out.println("Would you like to continue? (Y/N)");
-            yesNo = scan.next();
-
-        } while ("Y".equalsIgnoreCase(yesNo));
 
     }
 }
