@@ -20,9 +20,13 @@ public class MethodExercises {
         return n / m;
     }
 
+    public static int modulus2(int o, int p) {
+        return o % p;
+    }
+
     public static void main(String[] args) {
 
-        System.out.println(division(1, 2));
+        System.out.println(modulus2(1, 2));
     }
 
 //        Scanner scan = new Scanner(System.in);
