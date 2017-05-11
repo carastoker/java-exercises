@@ -16,10 +16,10 @@ public class StringExercise {
         System.out.println("Enter a statement");
         input = scan.next();
 
-        if(input.endsWith("?")) {
-            message = "sure";
+        if(input.endsWith("!")) {
+            message = "don't shout";
         } else {
-            message = "not a question";
+            message = "speak up please!";
         }
             System.out.println(message);
     }
