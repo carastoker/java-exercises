@@ -17,7 +17,7 @@ public class StringExercise {
         input = scan.next();
 
         if(input.endsWith("!")) {
-            message = "don't shout";
+            message = "Whoa, chill out!' if you yell";
         } else {
             message = "speak up please!";
         }
