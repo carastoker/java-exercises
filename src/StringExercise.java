@@ -14,12 +14,12 @@ public class StringExercise {
         String message;
 
         System.out.println("Enter a statement");
-        input = scan.next();
+        input = scan.nextLine();
 
-        if(input.endsWith("!")) {
-            message = "Whoa, chill out!";
+        if(input.equals("")) {
+            message = "Fine. Be that way!";
         } else {
-            message = "speak up please!";
+            message = "other stuff!";
         }
             System.out.println(message);
     }
