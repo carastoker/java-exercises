@@ -20,11 +20,11 @@ public class StringExercise {
         if (input.endsWith("?")) {
             answer = "Sure.";
 
-        } else if (input.endsWith("!") || input.toUpperCase().equals(input)) {
-            answer = "'Whoa, chill out!";
-
         } else if (input.trim().isEmpty()) {
             answer = "Fine. Be that way!";
+
+        } else if (input.endsWith("!") || input.toUpperCase().equals(input) && !input.toLowerCase().equals(input)) {
+            answer = "'Whoa, chill out!";
 
         } else {
             answer = "Whatever";
