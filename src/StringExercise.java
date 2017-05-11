@@ -11,18 +11,26 @@ public class StringExercise {
 
         String input;
 
-        String message;
+        String answer;
 
-        System.out.println("Enter a statement");
+        System.out.println("Chat with Bob the teenager");
         input = scan.nextLine();
 
-        if(input.equals("")) {
-            message = "Fine. Be that way!";
+
+        if (input.endsWith("?")) {
+            answer = "Sure.";
+
+        } else if (input.endsWith("!") || input.toUpperCase().equals(input)) {
+            answer = "'Whoa, chill out!";
+
+        } else if (input.trim().isEmpty()) {
+            answer = "Fine. Be that way!";
+
         } else {
-            message = "other stuff!";
+            answer = "Whatever";
         }
-            System.out.println(message);
+
+        System.out.println(answer);
     }
 
 }
-
