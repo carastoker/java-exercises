@@ -12,7 +12,7 @@ public class MethodExercises {
     //  set range of numbers user can input
     private static int min = 0;
     private static int max = 10;
-    private static String yesNo;
+//  private static String yesNo;
 
     public static int getUserInput() {
 
@@ -35,6 +35,7 @@ public class MethodExercises {
         }
     }
 
+//  allow user to choose math operation to apply to the numbers they select
     public static int getOperation() {
 
         System.out.println("Which math operator would you like to use on these numbers: +, -, /, x, % ? ");
@@ -66,7 +67,7 @@ public class MethodExercises {
 
     public static int checkForZero(int num) {
 
-//      if user tries divide by 0 fire a prompt msg and send them back to original number prompt
+//      if user tries to divide by 0, fire a prompt msg, and send them back to previous prompt
         if (num == 0) {
             System.out.println("Can not divide by zero, please try again");
             num = getUserInput();
@@ -80,7 +81,7 @@ public class MethodExercises {
             return num;
         }
     }
-
+//  math operation fields
     public static int addition(int number1, int number2) {
 
         return number1 + number2;
@@ -111,8 +112,7 @@ public class MethodExercises {
     }
 
     public static void main(String[] args) {
-//        int userInput1 = getUserInput();
-//        int userInput2 = getUserInput();
+
             System.out.println(getOperation());
         }
 

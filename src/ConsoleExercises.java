@@ -15,21 +15,6 @@ public class ConsoleExercises {
         int age = scan.nextInt();
         System.out.println(age);
 
-//       input.nextLine();
-//       input.nextInt();
-
-//        System.out.println("Enter your name");
-//        name = scan.next();
-//        System.out.println(name);
-//
-//        System.out.println("Enter your favorite language");
-//        String lang = scan.next();
-//        System.out.println(lang);
-//
-//        System.out.println("Can you whistle");
-//        String whistle = scan.next();
-//        System.out.println(whistle);
-
         System.out.println("Do you prefer Italian and French food or Indian and Thai food\n");
         String food = scan.next();
         System.out.printf("I like ",food);
@@ -52,7 +37,6 @@ public class ConsoleExercises {
         System.out.printf("Perimeter = %.2fft %.2fft\n", (2 * width), (2 * length));
         System.out.printf("Volume = %.2f cu/ft\n", (length * height * width));
 
-//        System.out.printf("the area of the classroom is %.f2f\n, area");
 
     }
 
