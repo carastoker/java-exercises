@@ -7,11 +7,12 @@ import java.util.Scanner;
 
 public class MethodExercises {
 
-//  include scanner to enable user input
+    //  include scanner to enable user input
     private static Scanner scan = new Scanner(System.in);
-//  set range of numbers user can input
+    //  set range of numbers user can input
     private static int min = 0;
     private static int max = 10;
+    private static String yesNo;
 
     public static int getUserInput() {
 
@@ -23,7 +24,9 @@ public class MethodExercises {
 
 //      if user input is within set range continue
         if (userInput >= min && userInput <= max) {
+
             return userInput;
+
         } else {
 
 //          if not within range return them to number prompt
@@ -81,6 +84,18 @@ public class MethodExercises {
     public static void main(String[] args) {
         int userInput1 = getUserInput();
         int userInput2 = getUserInput();
+
+        // do {
+        // 1. add
+        // 2. subtract
+        //..
+        // 5. exit
+        // which one 1,2,3..
+        //switch
+        // case 3:
+        // ... System.out.println(division(userInput1, userInput2));
+        // while(option != 5);
+
         System.out.println(division(userInput1, userInput2));
     }
 
