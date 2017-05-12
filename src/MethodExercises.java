@@ -17,7 +17,7 @@ public class MethodExercises {
     public static int getUserInput() {
 
 //      prompt user for numbers
-        System.out.println("Enter a number between " + min + " and " + max);
+        System.out.println("Enter a number between " + min + " and " + max + "to perform arithmetic operation on.");
 
 //      grab users input
         int userInput = scan.nextInt();
@@ -32,6 +32,35 @@ public class MethodExercises {
 //          if not within range return them to number prompt
             System.out.println("Not a valid number");
             return getUserInput();
+        }
+    }
+
+    public static int getOperation() {
+
+        System.out.println("Which math operator would you like to use on these numbers: +, -, /, x, % ? ");
+        String userInput = scan.next();
+
+        switch(userInput) {
+
+            case "+":
+                return addition(getUserInput(), getUserInput());
+
+            case "-":
+                return subtraction(getUserInput(), getUserInput());
+
+            case "/":
+                return division(getUserInput(), getUserInput());
+
+            case "x":
+                return multiplication(getUserInput(), getUserInput());
+
+            case "%":
+                return modulus2(getUserInput(), getUserInput());
+
+            default:
+                System.out.println("Nope!");
+                return getOperation();
+
         }
     }
 
@@ -82,21 +111,9 @@ public class MethodExercises {
     }
 
     public static void main(String[] args) {
-        int userInput1 = getUserInput();
-        int userInput2 = getUserInput();
+//        int userInput1 = getUserInput();
+//        int userInput2 = getUserInput();
+            System.out.println(getOperation());
+        }
 
-        // do {
-        // 1. add
-        // 2. subtract
-        //..
-        // 5. exit
-        // which one 1,2,3..
-        //switch
-        // case 3:
-        // ... System.out.println(division(userInput1, userInput2));
-        // while(option != 5);
-
-        System.out.println(division(userInput1, userInput2));
     }
-
-}
