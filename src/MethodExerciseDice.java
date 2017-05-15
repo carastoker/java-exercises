@@ -7,6 +7,7 @@ import java.lang.*;
 
 public class MethodExerciseDice {
 
+
     private static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -24,12 +25,14 @@ public class MethodExerciseDice {
 
     }
 
+//  prompts user to choose number of dice sides
     public static int getSides() {
 
-        System.out.println("How many sides do you want your dice to have?");
+        System.out.println("Let's roll the dice! How many sides do you want your dices to have?");
         return scan.nextInt();
     }
 
+//  creates random math for dice roll
     public static int rollDice(int max) {
 
         int dice = (int) (Math.round(Math.random() * (max - 1)) + 1);

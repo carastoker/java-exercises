@@ -5,10 +5,11 @@
 
 import java.util.Scanner;
 
-public class MethodExercises {
+public class MethodExercisesArithmetic {
 
     //  include scanner to enable user input
     private static Scanner scan = new Scanner(System.in);
+
     //  set range of numbers user can input
     private static int min = 0;
     private static int max = 10;
@@ -29,7 +30,7 @@ public class MethodExercises {
 
         } else {
 
-//          if not within range return them to number prompt
+//          if not within range return them to number getUserInput prompt
             System.out.println("Not a valid number");
             return getUserInput();
         }
@@ -81,7 +82,7 @@ public class MethodExercises {
             return num;
         }
     }
-//  math operation fields
+//  math operations
     public static int addition(int number1, int number2) {
 
         return number1 + number2;
