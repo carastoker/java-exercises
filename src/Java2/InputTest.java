@@ -9,13 +9,13 @@ public class InputTest {
 
         Input otherInput = new Input();
 
-        otherInput.getString();
+        otherInput.getString("What is your name?");
+
+//   ---------------------------------
 
         Input inputYesNo = new Input();
 
-        System.out.println("Would you like to visit Morocco? Y/N");
-
-        System.out.println(inputYesNo.yesNo());
+        System.out.println(inputYesNo.yesNo("Would you like to visit Morocco? Y/N"));
     }
 
 

@@ -13,24 +13,37 @@ public class Input {
     private static Scanner scan = new Scanner(System.in);
 
 
-    public String getString() {
-
-        System.out.println("What is your name?");
+    public String getString(String message) {
+        System.out.println(message);
         return scan.next();
 
     }
 
-   public boolean yesNo() {
+    public boolean yesNo(String message) {
+
+        System.out.println(message);
 
         String answer = scan.next();
 
-        if(answer.equalsIgnoreCase("Y")) {
+        if (answer.equalsIgnoreCase("Y")) {
 
             return true;
 
-        } else
+        } else if (answer.equalsIgnoreCase("n")) {
 
             return false;
 
-   }
+//      if user inputs anything other than Y/N
+        } else {
+
+            System.out.println("Invalid input!");
+
+            return yesNo(message);
+        }
+    }
+
+//    public int getInt(int min, int max, String message) {
+//
+//    }
+//
 }
