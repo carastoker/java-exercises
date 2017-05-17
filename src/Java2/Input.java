@@ -6,15 +6,20 @@ import java.util.Scanner;
 /**
  * Created by cstoker on 5/16/17.
  */
+
 public class Input {
 
-    private String salutation;
+//    private Scanner scan;
 
-    private static Scanner scan = new Scanner(System.in);
+//    this.scan =  = new Scanner(System.in);
+
+    private Scanner scan = new Scanner(System.in);
 
 
     public String getString(String message) {
+
         System.out.println(message);
+//      get input from user
         return scan.next();
 
     }
@@ -25,11 +30,11 @@ public class Input {
 
         String answer = scan.next();
 
-        if (answer.equalsIgnoreCase("Y")) {
+        if (answer.equalsIgnoreCase("Y")|| answer.equalsIgnoreCase("Yes")) {
 
             return true;
 
-        } else if (answer.equalsIgnoreCase("n")) {
+        } else if (answer.equalsIgnoreCase("N") || answer.equalsIgnoreCase("No")) {
 
             return false;
 
@@ -78,11 +83,11 @@ public class Input {
 
         if (guess >= min && guess <= max) {
 
-            System.out.println("That is right!");
+            System.out.println("That is right! Your number is within range.");
 
         } else
 
-            System.out.println("Nah, guess again!");
+            System.out.println("Nah, guess again. Your number is out of range!");
 
         return getDouble(min, max, message);
 
