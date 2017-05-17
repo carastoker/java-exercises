@@ -20,6 +20,11 @@ public class InputTest {
 
         otherInput.getInt(1, 7,"Guess a number");
 
+        otherInput.getInt("what's your favorite number?");
+
+        otherInput.getDouble(2, 22, "Guess a number with a decimal!");
+
+        otherInput.getDouble(7, 27, "Pick a number with a decimal!");
     }
 
 }

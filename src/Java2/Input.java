@@ -48,7 +48,7 @@ public class Input {
 
         int guess = scan.nextInt();
 
-        if(guess >= min && guess <= max) {
+        if (guess >= min && guess <= max) {
 
             System.out.println("That's right!");
 
@@ -58,8 +58,42 @@ public class Input {
 
             System.out.println("Nope! Guess again");
 
-            return getInt(min, max, message);
+        return getInt(min, max, message);
 
     }
-//
+
+    public int getInt(String message) {
+
+        System.out.println(message);
+
+        return scan.nextInt();
+
+    }
+
+    public double getDouble(double min, double max, String message) {
+
+        System.out.println(message);
+
+        double guess = scan.nextDouble();
+
+        if (guess >= min && guess <= max) {
+
+            System.out.println("That is right!");
+
+        } else
+
+            System.out.println("Nah, guess again!");
+
+        return getDouble(min, max, message);
+
+    }
+
+    public double getDouble(String message) {
+
+        System.out.println(message);
+
+        return scan.nextDouble();
+
+    }
+
 }
