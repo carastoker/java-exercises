@@ -13,10 +13,13 @@ public class InputTest {
 
 //   ---------------------------------
 
-        Input inputYesNo = new Input();
 
-        System.out.println(inputYesNo.yesNo("Would you like to visit Morocco? Y/N"));
+        System.out.println(otherInput.yesNo("Would you like to visit Morocco? Y/N"));
+
+//   --------------------------------
+
+        otherInput.getInt(1, 7,"Guess a number");
+
     }
-
 
 }

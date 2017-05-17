@@ -42,8 +42,24 @@ public class Input {
         }
     }
 
-//    public int getInt(int min, int max, String message) {
-//
-//    }
+    public int getInt(int min, int max, String message) {
+
+        System.out.println(message);
+
+        int guess = scan.nextInt();
+
+        if(guess >= min && guess <= max) {
+
+            System.out.println("That's right!");
+
+            return guess;
+
+        } else
+
+            System.out.println("Nope! Guess again");
+
+            return getInt(min, max, message);
+
+    }
 //
 }
