@@ -7,5 +7,11 @@ public class CircleApp {
 
     public static void main(String[] args) {
 
+        Input otherInput = new Input();
+
+        System.out.println("What radius would you like your circle to have?");
+
+
+
     }
 }
