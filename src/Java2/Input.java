@@ -47,7 +47,7 @@ public class Input {
         }
     }
 
-    public int getInt(int min, int max, String message) {
+    public int getInt(int min, int max, String message, String invalidMes) {
 
         System.out.println(message);
 
@@ -55,15 +55,13 @@ public class Input {
 
         if (guess >= min && guess <= max) {
 
-            System.out.println("That's right!");
-
             return guess;
 
         } else
 
-            System.out.println("Nope! Guess again");
+            System.out.println(invalidMes);
 
-        return getInt(min, max, message);
+        return getInt(min, max, message, invalidMes);
 
     }
 

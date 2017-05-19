@@ -18,7 +18,7 @@ public class InputApp {
 
 //   --------------------------------
 
-        otherInput.getInt(1, 7,"Guess a number between 1 and 7");
+        otherInput.getInt(1, 7,"Guess a number between 1 and 7", "Try again");
 
         otherInput.getInt("what's your favorite number?");
 
