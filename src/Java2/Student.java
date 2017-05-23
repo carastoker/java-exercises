@@ -8,30 +8,31 @@ import java.util.List;
  */
 public class Student {
 
-//  class properties
+    //  class properties
     private String name;
     private List<Integer> grades;
 
-//  constructor
+    //  constructor
     public Student(String name) {
 
         this.name = name;
         this.grades = new ArrayList<Integer>();
     }
 
-//  method returns value of name
+    //  method returns value of name
     public String getName() {
 
         return name;
 
     }
 
+    //  method adds student grades
     public void addGrade(Integer grade) {
 
         this.grades.add(grade);
     }
 
-//  grab all grades and divide
+    //  grab all grades and divide for an average
     public double getGradeAverage() {
 
         double gradeTotal = 0; // accumulator;
@@ -39,7 +40,7 @@ public class Student {
         for (double grade : this.grades) {
             gradeTotal += grade;
         }
-        return gradeTotal/this.grades.size();
+        return gradeTotal / this.grades.size();
 
     }
 

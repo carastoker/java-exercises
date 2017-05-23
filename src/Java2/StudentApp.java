@@ -10,6 +10,7 @@ public class StudentApp {
 
     public static void main(String[] args) {
 
+//      import Input methods
         Input otherInput = new Input();
         boolean validInput;
 
@@ -20,20 +21,21 @@ public class StudentApp {
         Bart.addGrade(86);
         Bart.addGrade(78);
         Bart.addGrade(90);
-        students.put("git", Bart);
+//        students.put("git", Bart);
 
         Student Homer = new Student("Homer");
         Homer.addGrade(72);
-        Homer.addGrade(75);
-        Homer.addGrade(70);
-        Homer.addGrade(69);
-        students.put("git", Homer);
+        Homer.addGrade(74);
+        Homer.addGrade(65);
+        Homer.addGrade(60);
+//        students.put("git", Homer);
 
         Student Lisa = new Student("Lisa");
         Lisa.addGrade(99);
         Lisa.addGrade(95);
         Lisa.addGrade(96);
         Lisa.addGrade(98);
+
         do {
 
             System.out.println("Welcome!\n\n" + "Here are the github usernames of our students:\n\n" +
@@ -59,11 +61,7 @@ public class StudentApp {
             } while (!validInput);
 
 
-        }while(otherInput.yesNo("\n Would you like to continue? Y/N"));
-
-//        System.out.println("Student: " +  Bart.getName() + " Grade Average: " + Bart.getGradeAverage());
-//        System.out.println("Student: " + Homer.getName() + " Grade Average: " + Homer.getGradeAverage());
-//        System.out.println("Student: " + Lisa.getName() + " Grade Average: " + Lisa.getGradeAverage());
+        } while (otherInput.yesNo("\n Would you like to continue? Y/N"));
 
     }
 }
