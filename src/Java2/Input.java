@@ -51,13 +51,24 @@ public class Input {
 
         System.out.println(message);
 
-        int guess = scan.nextInt();
+            int guess;
+
+        try {
+
+            guess = Integer.valueOf(scan.next());
+
+        } catch (NumberFormatException ex) {
+
+            System.out.println(invalidMes);
+
+            return getInt(min, max, message, invalidMes );
+        }
 
         if (guess >= min && guess <= max) {
 
             return guess;
 
-        } else
+        }
 
             System.out.println(invalidMes);
 
