@@ -59,7 +59,7 @@ public class Input {
 
         } catch (NumberFormatException ex) {
 
-            System.out.println(invalidMes);
+            System.out.println("Exception thrown!");
 
             return getInt(min, max, message, invalidMes );
         }
@@ -88,13 +88,24 @@ public class Input {
 
         System.out.println(message);
 
-        double guess = scan.nextDouble();
+        double guess;
+
+        try{
+
+            guess = Double.valueOf(scan.next());
+
+        } catch(NumberFormatException ex) {
+
+            System.out.println("Throwing an exception!");
+
+            return getDouble(min, max, message);
+        }
 
         if (guess >= min && guess <= max) {
 
             System.out.println("That is right! Your number is within range.");
 
-        } else
+        }
 
             System.out.println("Nah, guess again. Your number is out of range!");
 
